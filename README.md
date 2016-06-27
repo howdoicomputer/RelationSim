@@ -2,6 +2,7 @@
 Simulates a population trying to pair up with ideal mates with the possibility of breaking off and trying again.
 
 =Basic Theory=
+
 This model places the personality spectrum of the population on a loop with an even distribution. The ideal match for each individual is someone similar to themselves. Therefore, there is no universally prefered individual, and there are two optimised groupings One has odd numbered individials pair to their left and even inividuals pair to their right (on the personality loop). The other is a mirror image of the first (this assumes an even number of individuals within the population).
 
 Individauls will have a positive or negative loyalty once in a relationship. Negative loyalty represents a "The grass is always greener" mentality - the individial will abandon a better partner for a worse one. The more negative their loyalty is, the more they are willing to lose in terms of partner compatability. Individuals with a positive loyalty will overestimate their current partner's compatability when comparing them to other partners. The degree to which they overestimate the compatability of their current relationship will be equal to their loyalty.
@@ -13,6 +14,7 @@ Individuals have a heartbreak threshold. After a partner has left them this many
 The simulation is attempting to group people optimally based on these factors. Thus, it rates individuals who were not able to find a partner and individuals who reached the heartbreak threshold quite poorly. The final output will be a measurement of the final happiness of the population at the end of the time period. The happiness of the population is defined as the average compatability for the pairs and a penalty for the percent of the population that has been left unpaired.
 
 =Variables=
+
 Population: The number of individuals. This number is a positive integer >= 2
 
 Group Size: The number of individauls in the randomly composed small groups when one is seeking a mate. This number is a positive                 integer >= 2
@@ -51,5 +53,6 @@ Average: How many times should we run the simulation to form an average?
 7. Output the average Happiness in a matlab/octave document
 
 =Expanded Features=
-Stepping over a range of Loyalty has been added, outputing an average happiness for each Loyalty
-Stepping over a range of Burnout Thresholds has been added, outputing an average happiness for each Burnout Threshold
+
+-Stepping over a range of Loyalty has been added, outputing an average happiness for each Loyalty
+-Stepping over a range of Burnout Thresholds has been added, outputing an average happiness for each Burnout Threshold

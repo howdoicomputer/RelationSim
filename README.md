@@ -37,11 +37,17 @@ Average: How many times should we run the simulation to form an average?
 2. Loops over the Max Time
 
 3. Primary Process
+
   3a. Select one individual at random and select a small group at random
+  
   3b. The individual looks for the best possible match in the group
+  
   3c. If the individual is already paired, they will break off their current relationship if the prospective partner is estimated (adding in Loyalty here) to be a better match. The partner left behind will gain one burnout.
+  
   3d. If the original individual is still paired at this point, skip to step 4.
+  
   3e. If the target partner is already paired, they will estimate the value of the relationship they are currently in against the approaching partner (just like the approaching partner went through). If the approaching partner is estimated to be a better match (adding in Loyalty), the target individual will break off their relationship. The partner left behind will gain one burnout.
+  
   3f. If both the original individual and the target individual are free, they will be paired together.
 
 4. Repeat step 3 until the Max Time has been exceeded.
@@ -55,4 +61,5 @@ Average: How many times should we run the simulation to form an average?
 =Expanded Features=
 
 -Stepping over a range of Loyalty has been added, outputing an average happiness for each Loyalty
+
 -Stepping over a range of Burnout Thresholds has been added, outputing an average happiness for each Burnout Threshold
